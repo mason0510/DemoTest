@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:gao="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sfsj.asus.demotest.MainActivity">
+
+<!--引入自定义的titlebar控件  需要写几个方法 -->
+    <com.sfsj.asus.demotest.TitleBar
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/title_bar"
+        android:background="#ffff00"
+        gao:titleBar_left_image="@mipmap/left_icon"
+        gao:titleBar_right_image="@mipmap/right_icon"
+        gao:titleBar_title="@string/app_name"
+        >
+    </com.sfsj.asus.demotest.TitleBar>
+</RelativeLayout>
